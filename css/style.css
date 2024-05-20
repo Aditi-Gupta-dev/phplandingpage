@@ -1,0 +1,43 @@
+.carousel-item img {
+  width: 100vw;
+  height: 90vh;
+  object-fit: cover;
+  object-position: left;
+}
+.aboutimg img {
+  width: 100%;
+  height: 250 !important;
+}
+
+.formcontainer .row:first-child img {
+  animation: imageFadeIn 3s ease-in-out;
+}
+
+.formcontainer .row:last-child {
+  animation: formSlideIn 3s ease-in-out;
+}
+
+@keyframes imageFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for the form */
+@keyframes formSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Applying animations */
